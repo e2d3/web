@@ -22,7 +22,7 @@ Template Name: front-page-en
                         <a href="<?php echo esc_url( get_home_url() ); ?>/app-install/" class="button">Download E2D3 FOR FREE</a>
                         <ul class="intro-link">
                             <li><a target="_blank" href="https://www.jss.gr.jp/society/prize/prize_biog2018/">Winner of The Japan Statistical Society award of 2018</a></li>
-                            <li><a target="_blank" href="http://e2d3.org/ja/2016/04/04/stat-dash%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%97%E3%83%AA2016-%E7%B7%8F%E5%8B%99%E5%A4%A7%E8%87%A3%E8%B3%9E-%E5%8F%97%E8%B3%9E/">Winner of STAT DASH Grand Prix 2016</a></li>
+                            <li><a target="_blank" href="http://e2d3.org/ja/2016/04/04/stat-dash%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%97%E3%83%AA2016-%E7%B7%8F%E5%8B%99%E5%A4%A7%E8%87%A3%E8%B3%9E-%E5%8F%97%E8%B3%9E/">Ministerial Award Winner of STAT DASH Grand Prix 2016</a></li>
                         </ul>
                     </div>
                     <div class="main-news">
