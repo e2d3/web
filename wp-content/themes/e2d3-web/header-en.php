@@ -1,11 +1,13 @@
 <!DOCTYPE HTML>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>E2D3 &#8211; Data Visualization for Everyone</title>
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<link rel="alternate" hreflang="ja" href="https://e2d3.org/" />
+<link rel="alternate" hreflang="en" href="https://e2d3.org/en/" />
 <?php wp_head(); ?>
 </head>
 <body>

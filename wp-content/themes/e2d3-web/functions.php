@@ -166,6 +166,7 @@ add_filter('excerpt_more', 'new_excerpt_more');
 // サムネイルを250＊250で作る
 add_theme_support('post-thumbnails');
 add_image_size('e2d3-post-thumbnail', 250, 250, true);
+add_image_size('e2d3-interview', 300, 180, true);
 
 function e2d3_register_widget() {
 
@@ -389,4 +390,66 @@ function get_event_info_from_techplay(){
 
 }
 
+
+/**
+ * インタビューを出力
+ * @param none
+ * @return none
+ */
+function show_interviews(){
+
+  $interview = new WP_Query(array(
+    'post_type' => 'interview'
+  ));
+
+  $interviews = array();
+
+  if($interview->have_posts()){
+
+    while($interview->have_posts()){
+
+      $interview->the_post();
+      $title = the_title_attribute(array('echo'=>false));
+      $url = get_field('interview_url');
+      $tmb = get_field('interview_tmb');
+      $order = get_field('interview_order');
+      $item = array(
+        'title'=>$title,
+        'url'=>$url,
+        'tmb'=>$tmb['sizes']['e2d3-interview'],
+        'order'=>$order
+      );
+      array_push($interviews,$item);
+    }
+  }
+  wp_reset_postdata();
+
+  $order = array();
+  foreach($interviews as $idx => $row){
+    // $idx = 0,1,2...
+    $order[$idx] = (int)$row['order'];
+  }
+
+  array_multisort($order,SORT_ASC,$interviews);
+
+  ?>
+  <ul style="font-size:0;">
+  <?php
+  for($i=0;$i<count($interviews);$i++){
+
+  ?>
+    <li>
+      <a href="<?php echo $interviews[$i]["url"]; ?>">
+        <!-- <figure><img src="<?php echo $interviews[$i]["tmb"] ?>"/></figure> -->
+        <img src="<?php echo $interviews[$i]["tmb"] ?>"/>
+        <p><?php echo $interviews[$i]["title"] ?></p>
+      </a>
+    </li>
+  <?php
+  }
+  ?>
+  </ul>
+  <?php
+
+} // show_interviews
 ?>

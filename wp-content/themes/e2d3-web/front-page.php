@@ -217,28 +217,9 @@
         <section class="module main-interview">
             <div class="module-inner">
                 <h2>Developers’ Interview</h2>
-                <ul><!--
-                 --><li><a href="https://career.levtech.jp/sponsor/interview/1/">
-                        <img src="http://e2d3.org/wp-content/uploads/2015/12/interview0011-1-666x400.jpg" alt="">
-                        <p>ユーザベースCTO竹内秀行氏の挑戦「世界10億人が『E2D3』を使える日を夢見て」</p>
-                    </a></li><!--
-                 --><li><a href="https://geechs-magazine.com/tag/people/20170808">
-                        <img src="http://e2d3.org/wp-content/uploads/2017/08/igarashi1-640x384.jpg" alt="">
-                        <p>「パラレルキャリアを実践するなら絶対にゴールを見失うな」E2D3五十嵐氏インタビュー</p>
-                    </a></li><!--
-                 --><li><a href="https://career.levtech.jp/sponsor/interview/2/">
-                        <img src="http://e2d3.org/wp-content/uploads/2015/12/interview002-1-666x400.jpg" alt="">
-                        <p>大手メディア企業で働く澤氏「『E2D3』でデータ可視化のプログラミングコストを下げたい」</p>
-                    </a></li><!--
-                 --><li><a href="http://codezine.jp/article/detail/9567">
-                        <img src="http://e2d3.org/wp-content/uploads/2017/07/sato20170724-184x110.jpg" alt="">
-                        <p>誰もが簡単にデータビジュアライゼーションできる世界を目指して！ 日本初OSSプロジェクト「E2D3」とは</p>
-                    </a></li><!--
-                 --><li><a href="https://career.levtech.jp/sponsor/interview/3/">
-                        <img src="http://e2d3.org/wp-content/uploads/2015/12/interview003-1-666x400.jpg" alt="">
-                        <p>富士通データキュレーター小副川氏「『E2D3』がデータ探索的な会話のハブになる未来」</p>
-                    </a></li><!--
-             --></ul>
+                <?php 
+                  show_interviews();
+                ?>
             </div>
         </section>
 

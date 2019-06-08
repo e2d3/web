@@ -6,6 +6,10 @@
 <title>E2D3 &#8211; Data Visualization for Everyone</title>
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<?php if ( is_home() || is_front_page() ) : ?>
+<link rel="alternate" hreflang="ja" href="https://e2d3.org/" />
+<link rel="alternate" hreflang="en" href="https://e2d3.org/en/" />
+<?php endif; ?>
 <?php wp_head(); ?>
 </head>
 <body>
